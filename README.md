@@ -45,7 +45,7 @@ Problem 04: Sudoku Generator
 ### 7. 解答コードを GitHub 上へアップロード（git push）します。
 ![How to push](https://dl.dropboxusercontent.com/u/2819285/howto-push.png)
 	
-### 8. 2.で訪れたページを開き、先ほど書いた問題の解答を、オリジナルのリポジトリに送信（Pull Request）ボタンを押します。
+### 8. 2.で訪れたページを開き、先ほど書いた問題の解答を、オリジナルのリポジトリに送信（Pull Request）します。
 なお、2. で開いたページのURLは、こんな感じのURLです：`https://github.com/アカウント名/リポジトリ名`
 
 ![How to Pull Request](https://dl.dropboxusercontent.com/u/2819285/howto-pr.png)
