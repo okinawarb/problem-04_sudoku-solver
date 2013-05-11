@@ -3,7 +3,7 @@ Problem 04: Sudoku Generator
 
 午後のセッションでは、数独を作ってみましょう。基本問題が出来たグループは、応用問題にチャレンジしてみてください :-)
 
-## Git/GitHub の準備
+## Git/GitHubの準備
 
 ### 1. [Gitをダウンロード＆インストール](http://git-scm.com/downloads)し、ターミナル上で`git`コマンドが使えるようにしてください。
 
