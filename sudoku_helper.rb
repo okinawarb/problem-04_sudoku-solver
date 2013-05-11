@@ -8,12 +8,14 @@ def board_by_level level
     lines = data.each_char.map{ |c|
       c == '#' ? shuffled.pop : c
     }.join.split("\n")
-    lines.map do |line|
-      line.split(" ").map do |c|
+    board = 9.times.map{9.times.map{}}
+    lines.each_with_index do |line, y|
+      line.split(" ").each_with_index do |c, x|
         n = c.to_i
-        n unless n.zero?
+        board[x][y] = n unless n.zero?
       end
     end
+    board
   end
 end
 
