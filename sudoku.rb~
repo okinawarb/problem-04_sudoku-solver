@@ -55,6 +55,9 @@ s = Solve.new(board)
 
 res = s.solve
 
+p res
+
+
 sudoku_print res
 
 if sudoku_check res
