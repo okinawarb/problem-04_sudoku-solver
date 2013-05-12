@@ -1,23 +1,25 @@
-# -*- encoding: utf-8 -*-
-
 require './sudoku_helper'
 
-#level 1 - 4 まであります
-board = board_by_level 1
+board = board_by_level(ARGV[0] || 4)
 
-
-#nil になっている部分を1~9で埋めましょう
-board[0][0]=9
-
-
-sudoku_print board
-
-if sudoku_check board
-  if sudoku_complete? board
-    puts "complete!"
-  else
-    puts "not yet"
+def calc board
+  p = nil
+  9.times do |x|
+    9.times do |y|
+      p = x, y if board[x][y].nil?
+    end
   end
-else
-  puts "error!"
+  x, y = p
+  (1..9).each do |n|
+    board[x][y] = n
+    return board if sudoku_complete? board
+    if sudoku_check board
+      result = calc board
+      return result if result
+    end
+  end
+  board[x][y] = nil
 end
+
+sudoku_print calc board
+
